@@ -21,20 +21,20 @@ public class CILabTest {
     }
 
     @ParameterizedTest
-    @ValueSource(strings = {"USA", "leetcode", "Google"})
+    @ValueSource(strings = {"USA", "leetcode", "Google", "PERSONAL", ""})
     public void detectCapitalUseTest1(String str) {
 
         myString.setString(str);
-        assertTrue(myString.detectCapitalUse());
+        assertTrue(myString.detectCapitalUse(), str);
 
     }
 
     @ParameterizedTest
-    @ValueSource(strings = {"UsA", "lEEtcode", "GooGLE"})
+    @ValueSource(strings = {"UsA", "lEEtcode", "GooGLE", "PeRSONAL", "0"})
     public void detectCapitalUseTest2(String str) {
 
         myString.setString(str);
-        assertFalse(myString.detectCapitalUse());
+        assertFalse(myString.detectCapitalUse(), str);
 
     }
 }
