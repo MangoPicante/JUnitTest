@@ -1,10 +1,8 @@
 import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 public class CILabTest {
 
@@ -25,7 +23,7 @@ public class CILabTest {
     public void detectCapitalUseTest1(String str) {
 
         myString.setString(str);
-        assertTrue(myString.detectCapitalUse(), str);
+        Assertions.assertTrue(myString.detectCapitalUse(), str);
 
     }
 
@@ -34,7 +32,7 @@ public class CILabTest {
     public void detectCapitalUseTest2(String str) {
 
         myString.setString(str);
-        assertFalse(myString.detectCapitalUse(), str);
+        Assertions.assertFalse(myString.detectCapitalUse(), str);
 
     }
 }

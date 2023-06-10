@@ -1,6 +1,3 @@
-import java.util.Locale;
-import java.util.StringTokenizer;
-
 public class CILab implements CILabInterface {
     private String myString;
 
