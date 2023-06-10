@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="apache.maven.plugins.surefire.plugin" type="repository">
+    <properties include-transitive-deps="false" maven-id="org.apache.maven.plugins:maven-surefire-plugin:3.0.0-M5" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/plugins/maven-surefire-plugin/3.0.0-M5/maven-surefire-plugin-3.0.0-M5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
